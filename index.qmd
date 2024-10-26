@@ -11,6 +11,6 @@ Please stay tuned to follow my works on data analytics, blog posts, and more.
 
 This is our template.
 
-![](images/Fenerbahçe_SK.png){width="123"}
+![](images/Fenerbahçe_SK.png){width="505"}
 
-En büyük Fener.
+**En büyük Fener.**
