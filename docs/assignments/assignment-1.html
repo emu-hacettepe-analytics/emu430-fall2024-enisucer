@@ -264,6 +264,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>My first assignment has two parts.</p>
 <section id="a" class="level2">
 <h2 class="anchored" data-anchor-id="a">(a)</h2>
+<p>I watched the video with <strong>Cem Vardar</strong> was the guest.</p>
+<p>Cem Vardar, an industrial engineer holding both a bachelor’s degree and a doctorate from Arizona State University, began his career at Intel before moving into data science at Carvana. His expertise lies in leveraging data-driven insights to enhance the efficiency of complex systems and to improve logistics, profitability, and sales outcomes. He uses funnel analysis to refine the customer experience by tracking their journey from initial contact to purchase, and net lift modeling to assess the effectiveness of marketing campaigns in reaching target audiences. Vardar highlights the significance of analytical skills, the value of internships, and the growing impact of artificial intelligence and entrepreneurship within industrial engineering.</p>
+<p>1. <strong>Which of the following is not a field where operations research and data science are commonly applied together?</strong></p>
+<p>a) Logistic Planning</p>
+<p>b) Production Planning</p>
+<p>c) Inventory Management</p>
+<p>d) Customer Relationship Management</p>
+<p><em>Answer: d</em></p>
+<p>2. <strong>How does funnel analysis benefit businesses, and why is it valuable?</strong></p>
+<p><em>Answer: Funnel analysis monitors the path of potential customers from their first interaction to the final purchase. It enables businesses to comprehend and enhance each phase of the customer experience, ultimately leading to improved conversion rates.</em></p>
 </section>
 <section id="b" class="level2">
 <h2 class="anchored" data-anchor-id="b">(b)</h2>
@@ -322,39 +332,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 10        42.92745      42.23545        6.316175               NA</code></pre>
 </div>
 </div>
-<pre><code>        state  startdate    enddate                                                   pollster grade samplesize
-1        U.S. 2016-11-03 2016-11-06                                   ABC News/Washington Post    A+       2220
-2        U.S. 2016-11-01 2016-11-07                                    Google Consumer Surveys     B      26574
-3        U.S. 2016-11-02 2016-11-06                                                      Ipsos    A-       2195
-4        U.S. 2016-11-04 2016-11-07                                                     YouGov     B       3677
-5        U.S. 2016-11-03 2016-11-06                                           Gravis Marketing    B-      16639
-6        U.S. 2016-11-03 2016-11-06 Fox News/Anderson Robbins Research/Shaw &amp; Company Research     A       1295
-7        U.S. 2016-11-02 2016-11-06                                    CBS News/New York Times    A-       1426
-8        U.S. 2016-11-03 2016-11-05                               NBC News/Wall Street Journal    A-       1282
-9  New Mexico 2016-11-06 2016-11-06                                                   Zia Poll  &lt;NA&gt;       8439
-10       U.S. 2016-11-04 2016-11-07                                                   IBD/TIPP    A-       1107
-   population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin adjpoll_clinton adjpoll_trump
-1          lv           47.00         43.00            4.00               NA        45.20163      41.72430
-2          lv           38.03         35.69            5.46               NA        43.34557      41.21439
-3          lv           42.00         39.00            6.00               NA        42.02638      38.81620
-4          lv           45.00         41.00            5.00               NA        45.65676      40.92004
-5          rv           47.00         43.00            3.00               NA        46.84089      42.33184
-6          lv           48.00         44.00            3.00               NA        49.02208      43.95631
-7          lv           45.00         41.00            5.00               NA        45.11649      40.92722
-8          lv           44.00         40.00            6.00               NA        43.58576      40.77325
-9          lv           46.00         44.00            6.00               NA        44.82594      41.59978
-10         lv           41.20         42.70            7.10               NA        42.92745      42.23545
-   adjpoll_johnson adjpoll_mcmullin
-1         4.626221               NA
-2         5.175792               NA
-3         6.844734               NA
-4         6.069454               NA
-5         3.726098               NA
-6         3.057876               NA
-7         4.341786               NA
-8         5.365788               NA
-9         7.870127               NA
-10        6.316175               NA</code></pre>
+<pre><code></code></pre>
 <p>Calculate the total number of missing values NA rephrase</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>total_number_of_NA <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(polls_us_election_2016))</span>
@@ -363,11 +341,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] 11604</code></pre>
 </div>
 </div>
-<pre><code>[1] 11604</code></pre>
+<pre><code></code></pre>
 <p>Create variables for my birth year and first name, define a function to replace missing values, apply this function to each column of the dataset to fill in missing values, assign the updated data to a new variable, calculate the total number of missing values in the updated dataset, and print the count of missing values in the modified data.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>my_birth_year <span class="ot">&lt;-</span> <span class="dv">2003</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>my_first_name <span class="ot">&lt;-</span> <span class="st">"Elif"</span></span>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>my_birth_year <span class="ot">&lt;-</span> <span class="dv">2002</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>my_first_name <span class="ot">&lt;-</span> <span class="st">"Enis"</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>change_na_values <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.numeric</span>(x)) {</span>
@@ -387,7 +365,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] 0</code></pre>
 </div>
 </div>
-<pre><code>[1] 0</code></pre>
+<pre><code></code></pre>
 <p>Show the first 10 rows of the modified dataset.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(changed_data, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -401,54 +379,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 6     50     17108   17111       55     9       1295         lv           48.00
 7     50     17107   17111       18     8       1426         lv           45.00
 8     50     17108   17110      113     8       1282         lv           44.00
-9     37     17111   17111      195  Elif       8439         lv           46.00
+9     37     17111   17111      195  Enis       8439         lv           46.00
 10    50     17109   17112       76     8       1107         lv           41.20
    rawpoll_trump rawpoll_johnson rawpoll_mcmullin adjpoll_clinton adjpoll_trump
-1          43.00            4.00             2003        45.20163      41.72430
-2          35.69            5.46             2003        43.34557      41.21439
-3          39.00            6.00             2003        42.02638      38.81620
-4          41.00            5.00             2003        45.65676      40.92004
-5          43.00            3.00             2003        46.84089      42.33184
-6          44.00            3.00             2003        49.02208      43.95631
-7          41.00            5.00             2003        45.11649      40.92722
-8          40.00            6.00             2003        43.58576      40.77325
-9          44.00            6.00             2003        44.82594      41.59978
-10         42.70            7.10             2003        42.92745      42.23545
+1          43.00            4.00             2002        45.20163      41.72430
+2          35.69            5.46             2002        43.34557      41.21439
+3          39.00            6.00             2002        42.02638      38.81620
+4          41.00            5.00             2002        45.65676      40.92004
+5          43.00            3.00             2002        46.84089      42.33184
+6          44.00            3.00             2002        49.02208      43.95631
+7          41.00            5.00             2002        45.11649      40.92722
+8          40.00            6.00             2002        43.58576      40.77325
+9          44.00            6.00             2002        44.82594      41.59978
+10         42.70            7.10             2002        42.92745      42.23545
    adjpoll_johnson adjpoll_mcmullin
-1         4.626221             2003
-2         5.175792             2003
-3         6.844734             2003
-4         6.069454             2003
-5         3.726098             2003
-6         3.057876             2003
-7         4.341786             2003
-8         5.365788             2003
-9         7.870127             2003
-10        6.316175             2003</code></pre>
+1         4.626221             2002
+2         5.175792             2002
+3         6.844734             2002
+4         6.069454             2002
+5         3.726098             2002
+6         3.057876             2002
+7         4.341786             2002
+8         5.365788             2002
+9         7.870127             2002
+10        6.316175             2002</code></pre>
 </div>
 </div>
-<pre><code>   state startdate enddate pollster grade samplesize population rawpoll_clinton rawpoll_trump rawpoll_johnson
-1     50     17108   17111        1    10       2220         lv           47.00         43.00            4.00
-2     50     17106   17112       63     6      26574         lv           38.03         35.69            5.46
-3     50     17107   17111       81     8       2195         lv           42.00         39.00            6.00
-4     50     17109   17112      194     6       3677         lv           45.00         41.00            5.00
-5     50     17108   17111       65     5      16639         rv           47.00         43.00            3.00
-6     50     17108   17111       55     9       1295         lv           48.00         44.00            3.00
-7     50     17107   17111       18     8       1426         lv           45.00         41.00            5.00
-8     50     17108   17110      113     8       1282         lv           44.00         40.00            6.00
-9     37     17111   17111      195  Enis       8439         lv           46.00         44.00            6.00
-10    50     17109   17112       76     8       1107         lv           41.20         42.70            7.10
-   rawpoll_mcmullin adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin
-1              2002        45.20163      41.72430        4.626221             2002
-2              2002        43.34557      41.21439        5.175792             2002
-3              2002        42.02638      38.81620        6.844734             2002
-4              2002        45.65676      40.92004        6.069454             2002
-5              2002        46.84089      42.33184        3.726098             2002
-6              2002        49.02208      43.95631        3.057876             2002
-7              2002        45.11649      40.92722        4.341786             2002
-8              2002        43.58576      40.77325        5.365788             2002
-9              2002        44.82594      41.59978        7.870127             2002
-10             2002        42.92745      42.23545        6.316175             2002</code></pre>
+<pre><code></code></pre>
 
 
 </section>
