@@ -1,10 +1,10 @@
 project:
   type: website
   output-dir: docs
-
 website:
   title: "Vehbi Enis Üçer's Analytics Lab"
   navbar:
+    background: dark
     search: true
     left:
       - text: Home
@@ -19,15 +19,11 @@ website:
             href: assignments.qmd
           - text: Project
             href: project.qmd
-            
-    tools:
+    right:
       - icon: github
-        href: https://twitter.com
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/enisucer
       - icon: linkedin
-        href: https://linkedin.com
-
+        href: https://www.linkedin.com/in/enisucer/
   sidebar:
     - title: "Assignments"
       style: "docked"
@@ -35,21 +31,22 @@ website:
       contents:
         - assignments.qmd
         - assignments/assignment-1.qmd
-        - assignments/assignment-2.qmd  
+        - assignments/assignment-2.qmd
   page-navigation: true
   back-to-top-navigation: true
   page-footer:
-    center: "Hacettepe IE - EMU430 - 2024 Fall" 
+    center: "Hacettepe IE - EMU430 - 2024 Fall | Enis's Analytics Lab"
     border: true
 format:
   html:
+    include-in-header: 
+      - text: |
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    theme: darkly
+    css: styles.css
     toc: true
     toc-location: left
-    theme: 
-      light: pulse 
-      dark: superhero
-    css: styles.css
-
-
 editor: visual
+
+
 
